@@ -75,7 +75,7 @@ nav img{
 }
 
 .text-box h1 {
-    position: absolute;
+    position: center;
     white-space: nowrap;
     animation: slide-fade 10s ease-in-out infinite;
     font-size: 24px; /* Adjust font size as needed */
@@ -183,11 +183,102 @@ nav .fa{
     }
 
 
+    /*------Section Notification------*/
+
+    /* Styling for the notification bar section */
+.notification-bar {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the sliding text */
+  .slide-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: slide 17s linear infinite;
+  }
+  
+  /* Animation for sliding text with pause */
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    45% {
+      transform: translateX(0%); /* Text reaches the middle */
+    }
+    55% {
+      transform: translateX(0%); /* Pause for a while */
+    }
+    100% {
+      transform: translateX(-100%); /* Text slides out */
+    }
+  }
+  
+  /* Text styling */
+  .slide-text p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    display: inline;
+  }
+  
 
 
+    /*------Section campus photo------*/
 
+.campus-photo {
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 8px;
+}
 
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+}
 
+.container img {
+    width: 40%;
+    height: 30%;/* Image takes 40% of the container */
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
 
+.text {
+    width: 45%; /* Text takes 60% of the container */
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    display:flex;
+    background-color: darkgray;
+    justify-content: center;
+    flex-direction: column;
+    transform: skew(-20deg) translateX(5%);
 
+}
+
+.text h2 {
+    color: #00468b; /* Blue color for the heading */
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00468b;
+    text-align: center;
+    transform: skew(20deg);
+}
+
+.text p {
+    transform: skew(20deg);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
 
