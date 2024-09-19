@@ -17,7 +17,8 @@ This is a simple university website created using **HTML**and **CSS** to learn t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/university-website.git
+   git clone https://github.com/Muhtasim-Meem/UAP_Website.git
+   
 2. Open the index.html file in your web browser to view the website.
 
 ## Sections of the Website
